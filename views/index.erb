@@ -1,0 +1,12 @@
+<h1>I am inside the view!!!</h1>
+
+
+<ul>
+<% @restaurants.each do |r|  %>
+ <li> <%= r.name  %>
+
+   <a href="restaurants/<%=r.id %>">Show more</a>
+ </li>
+
+<%end  %>
+</ul>
